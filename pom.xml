@@ -33,25 +33,24 @@
             </plugin>
 
             <!-- Checkstyle -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.3.1</version>
-                <configuration>
-                    <configLocation>checkstyle.xml</configLocation>
-                    <failOnViolation>true</failOnViolation>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>validate</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
+            <plugin> 
+                <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-checkstyle-plugin</artifactId> 
+                <version>3.3.1</version> 
+                <configuration> 
+                    <configLocation>checkstyle.xml</configLocation> 
+                    <failOnViolation>true</failOnViolation> 
+                </configuration> 
+                <executions> 
+                    <execution> 
+                        <id>validate</id> 
+                        <phase>validate</phase> 
+                        <goals> 
+                            <goal>check</goal> 
+                        </goals> 
+                    </execution> 
+                </executions> 
             </plugin>
-
             <!-- JaCoCo -->
             <plugin>
                 <groupId>org.jacoco</groupId>
